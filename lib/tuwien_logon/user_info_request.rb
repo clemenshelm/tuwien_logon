@@ -22,7 +22,7 @@ module TuwienLogon
       infos = split_response(infos.to_s) unless infos.is_a? Array
         
       userdata = TuwienLogon::UserInfo.new(params)
-      TuwienLogon.config.user_info_params.each_with_index do |param, index|
+      params.each_with_index do |param, index|
         userdata.send("#{param}=".to_sym, infos[index]) unless infos[index].nil? || infos[index].empty?
       end
       userdata
