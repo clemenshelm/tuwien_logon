@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "tuwien_logon"
-    gem.summary = %Q{Ruby client for TU Wien authentication service}
-    gem.description = %Q{Provides an authentication solution for ruby applications being used at the university of technology Vienna}
+    gem.summary = %Q{Ruby client for Vienna UT authentication service}
+    gem.description = %Q{Provides an authentication solution for ruby applications being used at the Vienna University of Technology}
     gem.email = "clemens.helm@gmail.com"
     gem.homepage = "http://github.com/dropswap/tuwien_logon"
     gem.authors = ["Clemens Helm"]

@@ -1,6 +1,35 @@
 = tuwien_logon
 
-Description goes here.
+This gem is an authentication solution for ruby applications being used at the Vienna University of Technology.
+
+== Note
+
+You will only be able to use this gem for authentication if you have already registered your application at the ZID. Find more information at http://www.zid.tuwien.ac.at/sts/dateninfrastruktur/authentifizierungsservice/.
+Unfortunately this page is only provided in german though.
+
+== Usage
+
+For now only retrieving user information by their oid is implemented.
+
+    user = TuwienLogon::UserInfo.find_by_oid(1234567)
+    
+The following attributes can be accessed on success:
+
+    user.oid
+    user.firstname
+    user.lastname
+    user.title
+    user.matriculation_number
+    user.institute_symbol
+    
+You can change the name of these attributes in the configuration.
+
+== Configuration
+
+You can alter the following configuration options, here their default values are shown:
+
+    Tuwien.config.user_info_url     = 'https://iu.zid.tuwien.ac.at/AuthServ.userInfo'
+    Tuwien.config.user_info_params  = [:oid, :firstname, :lastname, :title, :matriculation_number, :institute_symbol]
 
 == Note on Patches/Pull Requests
  
