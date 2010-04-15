@@ -38,8 +38,8 @@ You can change the name of these attributes in the configuration.
 
 You can alter the following configuration options, here their default values are shown:
 
-    Tuwien.config.user_info_url     = 'https://iu.zid.tuwien.ac.at/AuthServ.userInfo'
-    Tuwien.config.user_info_params  = [:oid, :firstname, :lastname, :title, :matriculation_number, :institute_symbol]
+    TuwienLogon.config.user_info_url     = 'https://iu.zid.tuwien.ac.at/AuthServ.userInfo'
+    TuwienLogon.config.user_info_params  = [:oid, :firstname, :lastname, :title, :matriculation_number, :institute_symbol]
 
 == Note on Patches/Pull Requests
  
