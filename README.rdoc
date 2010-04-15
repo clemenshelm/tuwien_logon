@@ -4,8 +4,18 @@ This gem is an authentication solution for ruby applications being used at the V
 
 == Note
 
-You will only be able to use this gem for authentication if you have already registered your application at the ZID. Find more information at http://www.zid.tuwien.ac.at/sts/dateninfrastruktur/authentifizierungsservice/.
+You will only be able to use this gem for authentication if you have already registered your application at the ZID. Find more information at http://www.zid.tuwien.ac.at/sts/dateninfrastruktur/authentifizierungsservice.
 Unfortunately this page is only provided in german though.
+
+== Installation
+
+Installing tuwien_logon is rather simple:
+
+    gem install tuwien_logon
+    
+In your application you just have to require the gem in order to use it:
+
+    require 'tuwien_logon'
 
 == Usage
 
