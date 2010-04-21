@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{tuwien_logon}
-  s.version = "0.1.1"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Clemens Helm"]
-  s.date = %q{2010-04-15}
+  s.date = %q{2010-04-21}
   s.description = %q{Provides an authentication solution for ruby applications being used at the Vienna University of Technology}
   s.email = %q{clemens.helm@gmail.com}
   s.extra_rdoc_files = [
@@ -40,6 +40,7 @@ Gem::Specification.new do |s|
   s.summary = %q{Ruby client for Vienna UT authentication service}
   s.test_files = [
     "test/helper.rb",
+     "test/test_authentication.rb",
      "test/test_tuwien_logon.rb",
      "test/test_user_info.rb",
      "test/test_user_info_request.rb"
