@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{tuwien_logon}
-  s.version = "0.2.0"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Clemens Helm"]
@@ -24,10 +24,12 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/tuwien_logon.rb",
+     "lib/tuwien_logon/authentication.rb",
      "lib/tuwien_logon/configuration.rb",
      "lib/tuwien_logon/user_info.rb",
      "lib/tuwien_logon/user_info_request.rb",
      "test/helper.rb",
+     "test/test_authentication.rb",
      "test/test_tuwien_logon.rb",
      "test/test_user_info.rb",
      "test/test_user_info_request.rb",
