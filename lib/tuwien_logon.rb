@@ -6,5 +6,9 @@ module TuwienLogon
     def config
       TuwienLogon::Configuration.instance
     end
+    
+    def configuration
+      yield config
+    end
   end
 end

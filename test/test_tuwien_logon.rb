@@ -1,21 +1,17 @@
 require 'helper'
 
 class TestTuwienLogon < Test::Unit::TestCase
-  should "set the authentication url correctly" do
-    url = 'abc'
-    TuwienLogon.config.authentication_url = url
-    assert_equal url, TuwienLogon.config.authentication_url
-  end
-  
-  should "set the user info url correctly" do
+  should "set the user info url url directly" do
     url = 'abc'
     TuwienLogon.config.user_info_url = url
     assert_equal url, TuwienLogon.config.user_info_url
   end
   
-  should "set the secret correctly" do
+  should "set the user info url url by a block" do
     url = 'abc'
-    TuwienLogon.config.secret = url
-    assert_equal url, TuwienLogon.config.secret
+    TuwienLogon.configuration do |config|
+      config.user_info_url = url
+    end
+    assert_equal url, TuwienLogon.config.user_info_url
   end
 end
