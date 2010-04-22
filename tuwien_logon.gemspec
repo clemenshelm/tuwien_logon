@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{tuwien_logon}
-  s.version = "0.3.0"
+  s.version = "0.3.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Clemens Helm"]
-  s.date = %q{2010-04-21}
+  s.date = %q{2010-04-22}
   s.description = %q{Provides an authentication solution for ruby applications being used at the Vienna University of Technology}
   s.email = %q{clemens.helm@gmail.com}
   s.extra_rdoc_files = [
