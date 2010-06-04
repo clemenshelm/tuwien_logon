@@ -19,7 +19,7 @@ In your application you just have to require the gem in order to use it:
 
 == Usage
 
-For now only retrieving user information by their oid is implemented.
+You can easily retrieve user information like this:
 
     user = TuwienLogon::UserInfo.find_by_oid(1234567)
     
